@@ -48,7 +48,19 @@
     color: var(--HOrange);
     background-color:rgba(255, 160, 122, 0.3);
 }
-
+.btn-black{
+    color: var(--HWhite);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5em;
+    background-color: var(--HBlack);
+    border: 0;
+    border-radius: .75rem;
+    padding: 1rem 3.75rem;
+}
+.btn-black:hover{
+    background-color:var(--HBlue);
+}
 /* Nav Styles */
 .nav{
     max-width: 1160px;
@@ -58,9 +70,6 @@
     gap: 1.25rem;
     margin-left: 1rem ;
 }
-.logo{
-
-}
 .logo-name{
     color: var(--HBlack);
     font-size: 2rem;
@@ -69,8 +78,6 @@
 }
 .logo-name:hover{
     color: slategray;
-}
-.nav-bar{
 }
 .nav-items{
     gap: 2rem;
@@ -122,8 +129,39 @@
     display: none;
 }
 /* Header Styles */
-
-
+.Hero{
+    max-width: 1160px;
+    margin: 20px auto;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.hero-text{
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 640px ;
+    gap: 1.5rem;
+    /* border: 1px dashed rgb(255, 3, 3); */
+}
+.hero-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1em;
+    /* border: 1px dotted rgb(43, 255, 0) */
+}
+.hero-desc{
+    color: rgb(17, 17, 17);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25em;
+    /* border: 1px dotted rgb(255, 187, 0) */
+}
+#btn2{
+    /* border: 1px dotted rgb(38, 0, 255) */
+}
+.hero-img{
+    /* border: 1px dotted rgb(43, 255, 0) */
+}
 /* Main Styles */
 
 
@@ -149,5 +187,11 @@
         gap:70vw ;
     }
     /* Header */
-    
+    .Hero{
+        flex-direction: column-reverse;
+        max-width: 515px;
+    }
+    .hero-text{
+         align-items: center;
+    }
 }
