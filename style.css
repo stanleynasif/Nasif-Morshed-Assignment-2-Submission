@@ -149,8 +149,14 @@
     line-height: 1.1em;
     /* border: 1px dotted rgb(43, 255, 0) */
 }
+#Empowering{
+    color: var(--HOrange);
+}
+#towards-vision{
+    color: var(--HBlue);
+}
 .hero-desc{
-    color: rgb(17, 17, 17);
+    color: var(--HBlack);
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.25em;
@@ -193,5 +199,6 @@
     }
     .hero-text{
          align-items: center;
+         text-align: center;
     }
 }
