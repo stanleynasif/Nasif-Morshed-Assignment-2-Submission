@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box
 }
 /* Font Setup */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
@@ -65,6 +66,7 @@
 .nav{
     max-width: 1160px;
     margin: 20px auto;
+    justify-content: space-between;
 }
 .brand{
     gap: 1.25rem;
@@ -81,7 +83,6 @@
 }
 .nav-items{
     gap: 2rem;
-    padding: 0 186px;
 }
 .nav-item{
     list-style: none;
@@ -122,9 +123,6 @@
     height: 50px;
     display: none;
 }
-#btn-1{
-    margin-right: 1rem;
-}
 #hr1{
     display: none;
 }
@@ -162,17 +160,65 @@
     line-height: 1.25em;
     /* border: 1px dotted rgb(255, 187, 0) */
 }
-#btn2{
-    /* border: 1px dotted rgb(38, 0, 255) */
-}
-.hero-img{
-    /* border: 1px dotted rgb(43, 255, 0) */
-}
 /* Main Styles */
-
+.section-title{
+    color: var(--HBlack);
+    font-size: 2.875rem;
+    font-weight: 700;
+    line-height: 1.25em;
+    text-align: center;
+    }
 
 /* Standard-Curriculum Styles */
-
+.standard-curriculum{
+    max-width: 1160px;
+    margin: 20px auto;
+    flex-direction: column;
+    background-image: url(assets/bg.png);
+}
+.SC-container{
+    justify-content: space-between;
+    height: 480px;
+}
+.SCcard{
+    max-width: 368px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SCcard-content{
+    padding: 2.5rem ;
+    height: 480px;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 2rem;
+}
+.scard-img{
+    max-width: 140px ;
+    height: 140px;
+}
+.scard-title{
+    color: rgb(32, 32, 32);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.25em;
+    text-align: center;
+    }
+.scard-desc{
+    color: rgb(128, 128, 128);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75em;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.read-more{
+    padding-top: auto;
+}
+#rm1
+#rm2
+#rm3
 
 /* Our Stories Styles */
 
