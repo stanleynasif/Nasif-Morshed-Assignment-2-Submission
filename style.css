@@ -168,23 +168,40 @@
     line-height: 1.25em;
     text-align: center;
     }
-
+section{
+    max-width: 1160px;
+    margin: 60px auto 0;
+}
 /* Standard-Curriculum Styles */
 .standard-curriculum{
-    max-width: 1160px;
-    margin: 20px auto;
     flex-direction: column;
     background-image: url(assets/bg.png);
 }
 .SC-container{
     justify-content: space-between;
-    height: 480px;
+    max-height: 480px;
+    margin-top: 80px;
 }
 .SCcard{
     max-width: 368px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+#scard1{
+    border: 0.94px solid rgb(222, 245, 255);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+#scard2{
+    border: 0.94px solid rgb(255, 244, 220);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+#scard3{
+    border: 0.94px solid rgb(242, 232, 255);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
 }
 .SCcard-content{
     padding: 2.5rem ;
@@ -204,7 +221,7 @@
     font-weight: 700;
     line-height: 1.25em;
     text-align: center;
-    }
+}
 .scard-desc{
     color: rgb(128, 128, 128);
     font-size: 1rem;
@@ -214,12 +231,46 @@
     text-align: center;
 }
 .read-more{
-    padding-top: auto;
+    padding: auto;
+    font-size: 1rem;
+    font-family: "Quicksand", serif;
+    font-weight: 700;
+    line-height: 1.75em;
+    text-align: center;
+    border: none;
+    background-color: transparent;
 }
-#rm1
-#rm2
-#rm3
-
+#rm1{
+    color: var(--HBlue);
+}
+#rm2{
+    color: var(--HOrange);
+}
+#rm3{
+    color: rgb(135, 0, 255);
+}
+#rm1:hover{
+    color: slategray;
+}
+#rm2:hover{
+    color: slategray;
+}
+#rm3:hover{
+    color: slategray;
+}
+.arrow-container{
+    gap: 20px ;
+}
+.arrows{
+    margin-top: 60px;
+    padding:16px 22px;
+    background-color: var(--HOrange);
+    border:1px solid var(--HOrange);
+    border-radius: 50%;
+    color: var(--HWhite);
+    font-size: 2rem;
+    font-family: "Quicksand",serif;
+}
 /* Our Stories Styles */
 
 
@@ -227,9 +278,11 @@
 
 
 /* Responsive Mobile (<576px) Styles */
+
 @media screen and (max-width:576px) {
     /* Shrinking Nav Bar */
-    .nav-bar, .logo-name{
+
+    .nav-bar, .logo-name, .nav-button{
         display: none;
     }
     .Ham-img, #hr1{
@@ -244,7 +297,20 @@
         max-width: 515px;
     }
     .hero-text{
-         align-items: center;
-         text-align: center;
+        align-items: center;
+        text-align: center;
     }
+    /* Standard Curriculum */
+    .SC-container{
+        flex-direction: column;
+        margin: 80px auto;
+        gap: 30px;
+    }
+    section{
+        margin: 150px auto 0;
+    }
+    .arrow-container{
+        display: none;
+    }
+    
 }
