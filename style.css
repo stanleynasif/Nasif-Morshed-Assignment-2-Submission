@@ -138,6 +138,14 @@
 #btn-1{
     margin: 10px 0;
 }
+.marquee{
+    max-width: 1160px;
+    margin:auto; 
+}
+marquee{
+    color: var(--HOrange);
+    font-size: large;
+}
 /* Header Styles */
 .Hero{
     max-width: 1160px;
@@ -285,6 +293,10 @@ main{
     color: var(--HWhite);
     font-size: 2rem;
     font-family: "Quicksand",serif;
+}
+.arrows:hover{
+    background-color: var(--HBlue);
+    border:1px solid var(--HBlue);
 }
 /* Our Stories Styles */
 .our-stories{
@@ -534,6 +546,12 @@ footer{
     }
     section{
         margin: 150px auto 0;
+    }
+    .SCcard{
+        max-width: 90vw;
+    }
+    .SCcard-content{
+        height: auto;
     }
     .arrow-container{
         display: none;
