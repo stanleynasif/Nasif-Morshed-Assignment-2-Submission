@@ -76,7 +76,6 @@
 }
 .brand{
     gap: 1.25rem;
-    margin-left: 1rem ;
 }
 .logo>img{
     width: 100%;
@@ -180,6 +179,7 @@ marquee{
     line-height: 1.25em;
     /* border: 1px dotted rgb(255, 187, 0) */
 }
+
 /* Main Styles */
 .section-title{
     color: var(--HBlack);
@@ -521,7 +521,7 @@ footer{
         padding: 1rem 0;
     }
     .nav{
-        padding:1rem 2rem ;
+        padding:1rem 2vw ;
     }
     .Ham-img, #hr1{
         display: block;
@@ -537,6 +537,9 @@ footer{
     .hero-text{
         align-items: center;
         text-align: center;
+    }
+    .hero-img img{
+        width: 90vw;
     }
     /* Standard Curriculum */
     .SC-container{
