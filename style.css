@@ -52,12 +52,12 @@
 .btn-black{
     color: var(--HWhite);
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.5em;
     background-color: var(--HBlack);
     border: 0;
     border-radius: .75rem;
-    padding: 1rem 3.75rem;
+    padding: .8rem 3rem;
 }
 .btn-black:hover{
     background-color:var(--HBlue);
@@ -67,10 +67,16 @@
     max-width: 1160px;
     margin: 20px auto;
     justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    background-color: white;
 }
 .brand{
     gap: 1.25rem;
     margin-left: 1rem ;
+}
+.logo>img{
+    width: 100%;
 }
 .logo-name{
     color: var(--HBlack);
@@ -79,7 +85,7 @@
     line-height: 1em;
 }
 .logo-name:hover{
-    color: slategray;
+    color: var(--HBlue);
 }
 .nav-items{
     gap: 2rem;
@@ -125,6 +131,9 @@
 }
 #hr1{
     display: none;
+}
+#btn-1{
+    margin: 10px 0;
 }
 /* Header Styles */
 .Hero{
@@ -172,6 +181,10 @@ section{
     max-width: 1160px;
     margin: 60px auto 0;
 }
+main{
+    background: rgb(254,163,1);
+    background: linear-gradient(0deg, rgba(254,163,1,0.3) 0%, rgba(255,255,255,0.3) 34%);
+}
 /* Standard-Curriculum Styles */
 .standard-curriculum{
     flex-direction: column;
@@ -179,7 +192,6 @@ section{
 }
 .SC-container{
     justify-content: space-between;
-    max-height: 480px;
     margin-top: 80px;
 }
 .SCcard{
@@ -272,16 +284,160 @@ section{
     font-family: "Quicksand",serif;
 }
 /* Our Stories Styles */
+.our-stories{
+    margin-top:120px ;
+    flex-direction: column;
+    gap: 60px;
+    background-image: url(assets/bg.png);
+}
+.stories-container{
+    grid-template-columns:540px, repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas: 
+    "   story1   story2   story3"
+    "   story1   story4   story5"
+    ;
+    gap: 1rem;
+}
+.story1{
+    grid-area: story1;
+}
+.story2{
+    grid-area: story2;
+}
+.story3{
+    grid-area: story3;
+}
+.story4{
+    grid-area: story4;
+}
+.story5{
+    grid-area: story5;
+}
+/* .story6{
+    display: none;
+    grid-area: story6;
+}
+.story7{
+    display: none;
+    grid-area: story7;
+} */
+.stories1{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: space-between;
+    background-color: var(--HWhite);
+    border-radius: 1rem;
+    border: 0;
 
+}
+.stories2{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: center;
+    background-color: var(--HWhite);
+    border-radius: 1rem;
+    border: 0;
+    max-width: 293px;
+}
+.os-img{
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+}
+.os-btn{
+    color: rgb(255, 255, 255);
+    font-family: "quicksand", serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.7em;
+    text-align: left;
+    border-radius: 3rem;
+    border: 0;
+    padding: .625rem 1.25rem;
+    margin-left: 2.2rem;
 
+}
+.os-card-title{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: left;
+    padding:0 2.2rem 2.2rem;
+}
+.os-card-title-big{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: left;
+    padding: 0 2.2rem 0;
+}
+.os-card-desc{
+    color: rgb(102, 102, 102);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.7em;
+    text-align: left;
+    padding: 2.2rem;
+}
+#os1{
+    background-color: rgb(60, 216, 232);
+    position: relative;
+    top:-30px ;
+}
+#os2{
+    background-color: rgb(149, 178, 38);
+    position: relative;
+    top:-24px ;
+}
+#os3{
+    background-color: rgb(93, 88, 240);
+    position: relative;
+    top:-24px ;
+}
+#os4{
+    background-color: rgb(254, 163, 1);
+    position: relative;
+    top:-24px ;
+}
+#os5{
+    background-color: rgb(17, 17, 17);
+    position: relative;
+    top:-24px ;
+}
+/* #os6{
+    background-color: rgb(60, 216, 232);
+}
+#os7{
+    background-color: rgb(149, 178, 38);
+} */
+#os1:hover{
+    background-color: slategray;
+}
+#os2:hover{
+    background-color: slategray;
+}
+#os3:hover{
+    background-color: slategray;
+}
+#os4:hover{
+    background-color: slategray;
+}
+#os5:hover{
+    background-color: slategray;
+}
 /* Footer  Styles */
 
 
 /* Responsive Mobile (<576px) Styles */
-
 @media screen and (max-width:576px) {
     /* Shrinking Nav Bar */
-
+    :root{
+        font-size: 12px;
+    }
     .nav-bar, .logo-name, .nav-button{
         display: none;
     }
@@ -289,7 +445,8 @@ section{
         display: block;
     }
     .brand{
-        gap:70vw ;
+        margin:1rem 0 5px;
+        gap:65vw ;
     }
     /* Header */
     .Hero{
@@ -312,5 +469,22 @@ section{
     .arrow-container{
         display: none;
     }
-    
+    /* Our Stories */
+    .stories-container{
+        grid-template-columns:repeat(2,1fr) ;
+        grid-template-rows: repeat(2,auto);
+        gap: 1rem;
+        grid-template-areas: 
+        "story2   story3"
+        "story4   story5"
+        ;
+        margin: 0 1rem;
+    }
+    .story1{
+        display: none;
+        grid-area: story1;
+    }
+    /* .os-img{
+        width: 100%;
+    } */
 }
