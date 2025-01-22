@@ -36,7 +36,6 @@
 .dis-grid{
     display: grid;
 }
-
 .btn-orange{
     color: var(--HWhite);
     font-family: "Quicksand",serif;
@@ -180,7 +179,7 @@
     font-weight: 700;
     line-height: 1.25em;
     text-align: center;
-    }
+}
 section{
     max-width: 1160px;
     margin: 60px auto 0;
@@ -318,14 +317,6 @@ main{
 .story5{
     grid-area: story5;
 }
-/* .story6{
-    display: none;
-    grid-area: story6;
-}
-.story7{
-    display: none;
-    grid-area: story7;
-} */
 .stories1{
     display: flex;
     flex-direction: column;
@@ -412,12 +403,6 @@ main{
     position: relative;
     top:-24px ;
 }
-/* #os6{
-    background-color: rgb(60, 216, 232);
-}
-#os7{
-    background-color: rgb(149, 178, 38);
-} */
 #os1:hover{
     background-color: slategray;
 }
@@ -471,7 +456,6 @@ footer{
     line-height: 1.25em;
     text-align: left;
 }
-
 .spider-ul{
     list-style: none;
 }
@@ -512,7 +496,6 @@ footer{
     line-height: 1em;
     text-align: left;
 }
-
 /* Responsive Mobile (<576px) Styles */
 @media screen and (max-width:576px) {
     /* Shrinking Nav Bar */
