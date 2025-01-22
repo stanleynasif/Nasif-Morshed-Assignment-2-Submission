@@ -429,8 +429,85 @@ main{
 #os5:hover{
     background-color: slategray;
 }
+#v1{
+    margin-bottom: 60px;
+}
 /* Footer  Styles */
+footer{
+    background-color: var(--HBlue);
+}
+.footer{
+    max-width: 1160px;
+    margin: 0px auto 0;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+.about{
+    flex-direction: column;
+    max-width: 350px;
+    gap: 30px;
+}
+.Brand-ft{
+    gap: 2rem;
+}
+.logo-ft{
+    height: 82px ;
+}
+.sc-name{
+    color: var(--HWhite);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1em;
+    text-align: left;
+}
+.desc-ft{
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25em;
+    text-align: left;
+}
 
+.spider-ul{
+    list-style: none;
+}
+.spider-ul li{
+    padding: .6rem 0;
+}
+.spider-ul h4{
+    margin-bottom: 1rem;
+}
+.spider-il-title{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: left;
+}
+.spider-il{
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.25em;
+    text-align: left;
+}
+.touch{
+    flex-direction: column;
+    gap: 2rem;
+}
+.icons a{
+    text-decoration: none;
+}
+.icons>a>img{
+    margin-right: .8rem;
+}
+.touch-title{
+    color: rgb(255, 255, 255);
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 1em;
+    text-align: left;
+}
 
 /* Responsive Mobile (<576px) Styles */
 @media screen and (max-width:576px) {
@@ -441,11 +518,16 @@ main{
     .nav-bar, .logo-name, .nav-button{
         display: none;
     }
+    .logo{
+        padding: 1rem 0;
+    }
+    .nav{
+        padding:1rem 2rem ;
+    }
     .Ham-img, #hr1{
         display: block;
     }
     .brand{
-        margin:1rem 0 5px;
         gap:65vw ;
     }
     /* Header */
@@ -484,7 +566,10 @@ main{
         display: none;
         grid-area: story1;
     }
-    /* .os-img{
-        width: 100%;
-    } */
+    /* Footer */
+    .footer{
+        flex-direction: column;
+        margin-left: 2rem;
+        gap: 3rem;
+    }
 }
